@@ -1,10 +1,10 @@
-package ar.edu.unju.fi.main;
+package ar.edu.unju.fi.ejercicio1.main;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import ar.edu.unju.fi.model.Producto;
+import ar.edu.unju.fi.ejercicio1.model.Producto;
 
 public class Main {
 	private static final List<Producto> productos = new ArrayList<>();
