@@ -6,11 +6,39 @@ public class Producto {
     private double precioUnitario;
     private OrigenFabricacion origenFabricacion;
     private Categoria categoria;
+    private Boolean estado;
 
     public Producto() {
     }
+    
+    
 
-    public enum Categoria {
+    public Producto(String codigo, String descripcion, double precioUnitario, OrigenFabricacion origenFabricacion,
+			Categoria categoria, Boolean estado) {
+		super();
+		this.codigo = codigo;
+		this.descripcion = descripcion;
+		this.precioUnitario = precioUnitario;
+		this.origenFabricacion = origenFabricacion;
+		this.categoria = categoria;
+		this.estado = estado;
+	}
+
+
+
+	public Boolean getEstado() {
+		return estado;
+	}
+
+
+
+	public void setEstado(Boolean estado) {
+		this.estado = estado;
+	}
+
+
+
+	public enum Categoria {
         TELEFONIA, INFORMATICA, ELECTROHOGAR, HERRAMIENTAS
     }
 
